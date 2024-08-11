@@ -6,8 +6,14 @@ return {
     "nvim-tree/nvim-web-devicons", 
     "MunifTanjim/nui.nvim",
   },
+  keys = {
+    {"<C-n>", "<cmd>Neotree toggle<CR>", desc="NeoTree"},
+  },
   config = function()
-    vim.keymap.set('n', '<C-n>', ':Neotree filesystem reveal left<CR>', {})
-  end
+    require("neo-tree").setup()
+  end,
+  --  config = function()
+  --    vim.keymap.set('n', '<C-n>', ':Neotree filesystem reveal left<CR>', {})
+  --  end
 
 }
