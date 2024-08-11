@@ -7,7 +7,8 @@ return {
     "MunifTanjim/nui.nvim",
   },
   keys = {
-    {"<C-n>", "<cmd>Neotree toggle<CR>", desc="NeoTree"},
+    {"<C-n>", "<cmd>Neotree filesystem reveal left<CR>", desc="NeoTree"},
+    {"<C-b>", "<cmd>Neotree toggle<CR>", desc="NeoTree"},
   },
   config = function()
     require("neo-tree").setup()
